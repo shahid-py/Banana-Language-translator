@@ -1,1 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;1,500&family=Henny+Penny&display=swap');
+
+:root {
+--primary-color: #FCD34D;
+--secondary-color: #949090;
+
+}
+
+body {
+    font-family: 'Faustina', serif;
+    font-family: 'Henny Penny', cursive;
+    color:var(--secondary-color);
+    box-sizing: border-box;
+    margin: 0;
+}
+.navigation {
+    background-color: var(--primary-color);
+    padding: 0.9rem 1rem;
+    color:var(--secondary-color);
+    text-align: center;
+    font-size: var(--nav-font-size);
+  }
+  
+  .nav-heading {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .minion-svg {
+    height: 100px;
+    margin-top: 0.5rem;
+  }
+  
+  .container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+  
+  textarea {
+   font-family: inherit;
+    font-size: 30px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+    outline: none;
+    resize: none;
+    border-radius: 2rem;
+    
+  }
+  
+  button {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-family: inherit;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: scale(0.98);
+    transform-style: preserve-3d;
+  }
+  
+  /* footer */
+  
+  .footer {
+    background-color: whitesmoke;
+    padding: 0.9rem 1rem;
+    color:var(--secondary-color);
+    text-align: center;
+    font-size: var(--h1-value);
+    font-family: 'Faustina', serif;
+    font-style: italic;
+    color:black ;
+  }
+  
+  .warnme {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Henny Penny', cursive; 
+  }
+  
+  /* responsiveness */
+  
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+  
+    body {
+      width: 100vw;
+    }
+  
+    .minion-svg {
+      height: 100px;
+      margin-top: 2rem;
+    }
+  }
