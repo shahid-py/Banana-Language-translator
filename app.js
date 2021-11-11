@@ -13,4 +13,10 @@ function addTextParameterToURL(textParameter) {
     return `${minionURL}?text=${endcodedURI}`;
   }
   
+ // click handler function
  
+function clickHandler() {
+    var textParameter = inputText.value;
+    var serverURL = addTextParameterToURL(textParameter);
+  
+    console.log(serverURL);
